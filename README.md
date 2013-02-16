@@ -4,7 +4,7 @@ This is the gird system file used on WomStreet. It makes it easy to
 create quick grids that can be edited. It borrows heavily from the
 inspirations set by [960.gs](http://960.gs). The reason you might choose
 to use it is that it can be re-generated for any number of columns and
-a width of your chosing, all handled at compilation time by stylus
+a width of your choosing, all handled at compilation time by stylus
 
 
 ## Quick Reference
