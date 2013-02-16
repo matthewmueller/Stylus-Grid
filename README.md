@@ -11,32 +11,31 @@ a width of your chosing, all handled at compilation time by stylus
 
     #The following variables should be set to your choosing
 
-    $gridWidth = 1140px  # The total grid width of the content area
-    $gridNumColumns = 24 # The number of columns used in the grid
-    $gutterWidth = 20px  # The space between grid columns
+    $gridWidth = 1140px                   # The total grid width of the content area
+    $gridNumColumns = 24                  # The number of columns used in the grid
+    $gutterWidth = 20px                   # The space between grid columns
 
     # Available Mixins
 
-    container()          # A parent element for columns. Centers itself
-                         # in the page and adheres to max width set 
-                         # above
+    container()                           # A parent element for columns. Centers itself in 
+                                          # the page and adheres to max width set above
 
 
-    column($num)         # Creates a column of the number passed in
+    column($num)                          # Creates a column of the number passed in
 
-    column-push($num,    # Offsets a column by the number of columns
-                $alpha)  # passed in. Also needs to know if the offset
-                         # should be considered "alpha" 
+    column-push($num,                     # Offsets a column by the number of columns
+                $alpha)                   # passed in. Also needs to know if the offset
+                                          # should be considered "alpha" 
 
-    centered()           # Centers a column in its container
+    centered()                            # Centers a column in its container
 
-    alpha()              # Used to cancel the margin on the left, 
-                         # required for the first column in a
-                         # container
+    alpha()                               # Used to cancel the margin on the left, 
+                                          # required for the first column in a
+                                          # container
 
-    omega() / last()     # Used to cancel the margin on the right,  
-                         # required for the last column in a
-                         # container
+    omega() / last()                      # Used to cancel the margin on the right,  
+                                          # required for the last column in a
+                                          # container
 
 
 ## Usage
