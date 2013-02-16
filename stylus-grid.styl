@@ -1,0 +1,46 @@
+$gridWidth = 1140px
+$gridNumColumns = 24
+
+$gutterWidth = 20px
+
+
+
+// Do Not Edit Below this line (or do, if you like :) )
+
+$columnWidth = ($gridWidth - (($gridNumColumns - 1) * $gutterWidth)) / $gridNumColumns
+
+
+alpha()
+  margin-left: 0
+
+omega()
+  margin-right: 0
+
+last()
+  margin-right: 0
+
+centered()
+  float: none
+  margin: auto
+
+column($num)
+  width: ($num * $columnWidth) + (($num - 1) * $gutterWidth)
+  display: block
+  float: left
+  margin-left: ($gutterWidth/2)
+  margin-right: ($gutterWidth/2)
+  clearfix()
+
+column-push($num, $alpha = false)
+  $margin-left = ($gutterWidth/2) + ($columnWidth * $num) + ($gutterWidth * $num)
+  if $alpha
+    $margin-left = $margin-left - $gutterWidth/2
+  margin-left: $margin-left
+
+
+container()
+  padding: 0 ($gutterWidth / 2)
+  width: $gridWidth
+  margin: 0 auto
+  overflow: visible
+
